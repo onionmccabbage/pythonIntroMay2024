@@ -46,11 +46,13 @@ Object-Oriented Programming
     Understand how to define and use classes and objects in Python.
 
 Creating Functions, Modules, and Packages
-    Explore the creation and utilization of functions for modular code.
+    > Explore the creation and utilization of functions for modular code.
     Understand the concept of modules and packages for organizing and structuring code.
 
 Introduction to Functional Programming
-    Familiarize yourself with functional programming concepts in Python.
+    > Familiarize yourself with functional programming concepts in Python.
     Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
+
+read write files
 
  Future - Jupyter

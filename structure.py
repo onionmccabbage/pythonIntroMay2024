@@ -25,5 +25,10 @@ if __name__ == '__main__': # by default the current module is called __main__
 
     # we can override the defaults with our own values
     result = myFn(5, (4,5,6,7,8)) # we invoke the function
-    result = myFn(5, 2) # we invoke the function
+    result = myFn(5, 2) # we invoke the function (override defaults for a nad for b)
+    # we can override either of the defaults (or neither)
+    result = myFn(a=3) # takes the default for b
+    result = myFn(b=3) # takes the default for a
+    result = myFn(3) # takes the default for b
+    result = myFn(3, b=9) # implicitly override a (its positionally the first argument)
     print(result)
