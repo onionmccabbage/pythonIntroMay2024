@@ -35,7 +35,7 @@ def handleUserInput():
     return r
 
 # what does Python call this module?
-print(__name__) # __main__ when run directly
+print(f'This module is called {__name__}')  # __main__ when run directly
 
 if __name__ == '__main__': 
     # every time we execute a module directly, 

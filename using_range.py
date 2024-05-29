@@ -1,7 +1,8 @@
 import random # this is a library provided by python
 
 # we can import our own modules
-import using_functions
+# import using_functions
+from using_functions import isOdd
 
 # here we meet the range object - reeally useful for iterating, checking, etc.
 def myRange():
@@ -15,6 +16,9 @@ def checkPrime(n):
     if n in primes_t:
         return True
     return False # we could use else here
+
+# what does Python call this module?
+print(f'This module is called {__name__}') # __main__
 
 if __name__ == '__main__':
     result = myRange()
@@ -30,5 +34,6 @@ if __name__ == '__main__':
     # make use of the random library
     rand = random.randint(0,100) # give me a random integer between 0 and 100 inclusive
     # make use of our imported functions
-    odd = using_functions.isOdd(rand)
+    # odd = using_functions.isOdd(rand)
+    odd = isOdd(rand)
     print(f'The value {rand} is odd? {odd} is prime? {checkPrime(rand)}')
