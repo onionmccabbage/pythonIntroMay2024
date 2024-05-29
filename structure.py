@@ -12,6 +12,9 @@ def myFn(a=3, b=(9,8,7,6,5)): # the colon indicates the start of a code block
     return r    # every indented line belongs to this code block
 # when the lines are no longer indented, the code block has ended
 
+# what does Python call this module?
+print(__name__)
+
 # single equals SETS equality, double equals CHECKS equality
 if __name__ == '__main__': # by default the current module is called __main__
     '''This code will ONLY run when this module is run directly (not if it is imported elsewhere)'''

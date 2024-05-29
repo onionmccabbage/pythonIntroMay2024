@@ -50,3 +50,6 @@ my_set.add(8)
 my_set.add('more')
 
 print(my_set, type(my_set))
+
+# what does Python call this module?
+print(__name__)
