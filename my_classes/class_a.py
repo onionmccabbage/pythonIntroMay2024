@@ -11,6 +11,7 @@ myPoint_3[0] = True
 class Point2d(): # the brackets are optional
     '''Here we encapsulate a geometric point in 2-d space
     x and y will be floating point values (no defaults)'''
+    __slots__ = ['__x', '__y'] # we ONLY permit valueds in __x and __y
     def __init__(self, x, y): # every class method MUST take 'self' as an argument
         '''this is the initialiser for the class. 
         It is run every time we make a new instance'''
