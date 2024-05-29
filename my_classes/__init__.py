@@ -1,0 +1,1 @@
+# we can ignore or delete any file called __init__.py

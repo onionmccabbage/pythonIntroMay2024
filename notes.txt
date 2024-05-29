@@ -19,8 +19,8 @@ Welcome and Introductions
 
 Know your IDE
     Navigating Projects
-    Editing Files
-    Setting the interpreter for different python versions
+    > Editing Files
+    > Setting the interpreter for different python versions
     Debugging
     Shortcuts
 
@@ -42,12 +42,12 @@ Python's primary collection types
     Other python Collections
 
 Object-Oriented Programming
-    Learn the principles and syntax of Object-Oriented Programming.
-    Understand how to define and use classes and objects in Python.
+    > Learn the principles and syntax of Object-Oriented Programming.
+    > Understand how to define and use classes and objects in Python.
 
 Creating Functions, Modules, and Packages
     > Explore the creation and utilization of functions for modular code.
-    Understand the concept of modules and packages for organizing and structuring code.
+    > Understand the concept of modules and packages for organizing and structuring code.
 
 Introduction to Functional Programming
     > Familiarize yourself with functional programming concepts in Python.
