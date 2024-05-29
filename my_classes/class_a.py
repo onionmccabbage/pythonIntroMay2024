@@ -42,6 +42,14 @@ class Point2d(): # the brackets are optional
 
 if __name__ == '__main__':
     p1 = Point2d(3,4) # we now have an instance of our class (calls the __init__ method)
-    p2 = Point2d(-3,-4) # we now have an instance of our class (calls the __init__ method)
-    p3 = Point2d(4,3) # we now have an instance of our class (calls the __init__ method)
+    p2 = Point2d(-3.00,-4.00) # float values pass valiation
+    p3 = Point2d('4',3) # x will takethe default of zero
+    try: # wrap dodgy code in a try-except block
+        p4 = Point2d('4','3') # y fails validation and raises a type error
+    except TypeError as te:
+        print(f'Something went wrong: {te}')
+    except Exception as err: # we can handle any and every expected exception
+        print(err)
+    finally: # this always runs, whether or not we have an exception
+        pass
     print(p1.x, p1.y) # this invokes the property function x and y
