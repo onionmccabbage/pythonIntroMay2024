@@ -5,7 +5,7 @@ class Point3d(Point2d): # by default every class inherits from object
     we will add a numeric value for z'''
     def __init__(self, x, y, z):
         ''' we call the initializer of the parent class'''
-        Point2d.__init__(x, y) # all the features of x and y will be handled
+        Point2d.__init__(self, x, y) # all the features of x and y will be handled
         self.z = z
     @property
     def z(self):
@@ -20,3 +20,5 @@ class Point3d(Point2d): # by default every class inherits from object
 if __name__ == '__main__':
     pA = Point3d(3,4,5)
     pB = Point3d('3',2,1) # will use the default for x
+
+    print(pB) # <__main__.Point3d object ....>
