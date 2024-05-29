@@ -23,6 +23,17 @@ def isOdd(n):
         result = False
     return result
 
+def handleUserInput():
+    '''ask the user to enter a value'''
+    # remember - here we are I/O bound (wait for input or output)
+    v = input('Please enter a number: ') # the code will pause until the user has entered something
+    # be careful - EVERY user input will be a STRING
+    # Typically we can convert the inout to a numeric value
+    v_num = float(v)
+    # we may choose to format a nice string (with \n for new line)
+    r = f'The value {v_num} is {type(v_num)}.\nIs it odd? {isOdd(v_num)}' # the f says format this string
+    return r
+
 # what does Python call this module?
 print(__name__) # __main__ when run directly
 
@@ -30,7 +41,9 @@ if __name__ == '__main__':
     # every time we execute a module directly, 
     # Python will name that module __main__
     # If a module gets imported elsewhere, Python will NOT call that module __main__
-    '''we tend to use this kind of structure within every pythno module'''
+    '''we tend to use this kind of structure within every python module'''
+    r = handleUserInput() # invoke our function
+    print(r)
     r1 = addThem(3,4)
     r2 = addThem('5', '7')
     r3 = addThem('three', 'four')
