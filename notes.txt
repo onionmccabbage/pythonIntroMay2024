@@ -26,11 +26,15 @@ Know your IDE
 
 Python code essentials
     Learn effective debugging techniques for identifying and resolving errors
-    Foundational Concepts: Datatypes, Variables, and Branching Constructs
+    > Foundational Concepts: Datatypes, Variables, and Branching Constructs
+    functions, arguments
+    conditionals, loops
+    range object
+
 
 Python datatypes and variables
     Master the application of branching constructs for decision-making in code
-    Main Collection Types: List, Tuple, Set, Dict
+    > Main Collection Types: List, Tuple, Set, Dict
 
 Python's primary collection types
     Add, remove elements, and iterate over lists, tuples, sets, and dictionaries.
