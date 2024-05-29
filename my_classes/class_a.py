@@ -14,7 +14,21 @@ class Point2d(): # the brackets are optional
     def __init__(self, x, y): # every class method MUST take 'self' as an argument
         '''this is the initialiser for the class. 
         It is run every time we make a new instance'''
-        print(self)
+        # print(self)
+        self.__x = x # we use __x to 'mangle' the access to x
+        self.__y = y # mangling prevents direct acces to the values
+    # to provide access to these mangled properties, we write 'getter' and 'setter' methods
+    # also known as accessor and mutator methods
+    @property # this is a decorator (note the @ sign)
+    def x(self):
+        return self.__x
+    
+    @property
+    def y(self):
+        return self.__y
 
 if __name__ == '__main__':
     p1 = Point2d(3,4) # we now have an instance of our class (calls the __init__ method)
+    p2 = Point2d(-3,-4) # we now have an instance of our class (calls the __init__ method)
+    p3 = Point2d(4,3) # we now have an instance of our class (calls the __init__ method)
+    print(p1.x, p1.y) # this invokes the property function x and y
