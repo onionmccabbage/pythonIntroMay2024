@@ -27,9 +27,10 @@ Know your IDE
 Python code essentials
     Learn effective debugging techniques for identifying and resolving errors
     > Foundational Concepts: Datatypes, Variables, and Branching Constructs
-    functions, arguments
+    > functions, arguments
     conditionals, loops
     range object
+    after lunch: review exercise
 
 
 Python datatypes and variables
