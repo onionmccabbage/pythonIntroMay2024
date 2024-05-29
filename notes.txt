@@ -48,4 +48,4 @@ Introduction to Functional Programming
     Familiarize yourself with functional programming concepts in Python.
     Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
 
- 
+ Future - Jupyter
