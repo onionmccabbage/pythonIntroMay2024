@@ -18,7 +18,8 @@ def game():
     is_prime  = target in primes_t
     guess = 999 # set an initial value that is out of range
     # keep the game running
-    for guess_counter in range(999): # keep going for 999 guesses!!
+    # for guess_counter in range(999): # keep going for 999 guesses!!
+    while True: # careful - this will run forever!!!!!
         guess = int(float(input('guess:'))) # make sure it's an int
         # if guess != target:
             # conditionally act on the guess
@@ -27,13 +28,16 @@ def game():
         elif guess == -1: # do they want to quit
             print (f'it was {target}' )
             guess = target # break # stops the current loop
-            return # break out of the function
+            # return # break out of the function
+            break # this will end the while loop
         elif guess > target: # is the guess too high
             print('too high')
         elif guess < target: # is the guess too low (could be an else clause)
                 print('too low')
         else:
-            print(f'correct it was {target} you took {guess_counter} tries' )
-            return
+            print(f'correct it was {target} ') # you took {guess_counter} tries' )
+            # return
+            quit # quit out of the loop
+
 if __name__ == '__main__':
     game()
