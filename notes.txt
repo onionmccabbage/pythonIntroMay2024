@@ -55,7 +55,7 @@ Introduction to Functional Programming
     Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
     Another review exercise
 
-read write files
+> read write files
 
  Future - Jupyter
 

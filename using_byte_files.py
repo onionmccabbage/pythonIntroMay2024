@@ -16,6 +16,19 @@ def writeBytes(b):
     except Exception as err:
         print(f'problem {err}')
 
+def readBytes():
+    try:
+        with open('my_bytes', 'rb') as fin:
+            r = fin.read()
+    except Exception as err:
+        print(f'problem {err}')
+    finally:
+        return r
+
 if __name__ == '__main__':
     b = makeBytes('here is plain text\n')
     writeBytes(b)
+    r = readBytes()
+    t = makeText(r)
+    print(t)
+    
