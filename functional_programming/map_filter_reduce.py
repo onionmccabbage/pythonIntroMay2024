@@ -1,3 +1,4 @@
+import functools # a bunch of tools for functional programming, including redUce
 
 # here are some utility functions
 def isOdd(n):
@@ -24,6 +25,10 @@ def main():
     # print(my_odds.__next__()) # -7
     # print(my_odds.__next__()) # -5
     # print(my_odds.__next__()) # 5
+    # using reduce - repeatedly apply a function
+    r = range(1, 11) # start at 1 stop before 11
+    total = functools.reduce( addThem, r ) # rakeeach member of the range and cumulatively add them
+    print(total)
 
 # everything with leading and trailing double-underscore is part of Python
 # known as 'dunder'
