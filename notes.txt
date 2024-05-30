@@ -38,7 +38,7 @@ Python datatypes and variables
     > Main Collection Types: List, Tuple, Set, Dict
 
 Python's primary collection types
-    Add, remove elements, and iterate over lists, tuples, sets, and dictionaries.
+    > Add, remove elements, and iterate over lists, tuples, sets, and dictionaries.
     Other python Collections
 
 Object-Oriented Programming

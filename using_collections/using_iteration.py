@@ -16,5 +16,15 @@ e = {'n':k[0], 'age':n[2], 'recent':True, 'gender':'cis'}
 # we can iterate over a dict
 for (k,v) in e.items(): # by convention (k,v) for key,value. Careful items() is a method
     print(f'key {k} has value {v}')
+for k in e.keys():
+    print(k, e[k])
+for v in e.values():
+    print(v)
+
+# we can work strings
+s = 'strings are collections of UTF characters'
+print(len(s))
+for i in s:
+    print(i, end=', ') # by default print always ends with a new line but we can specify our own termination character
 
 s = set()
