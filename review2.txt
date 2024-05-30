@@ -1,0 +1,38 @@
+Review 2
+========
+In this exercise you will ask the user to specify a valid category, 
+then retrieve the relevant file for that category
+The individual items from the retrieved file will be displayed nicely
+Then ask which 'id' they want, and commit just that data member to a separate text file
+
+Choose how to architect your solution, e.g. one module, or several with imports
+Remember to use try-except for any file operations
+(Also, every input is always a string)
+
+Details:
+Ask to use if they want to see 'users', 'todos', 'posts' or 'photos' datatypes
+(You could use a while loop and get them to enter a valid category)
+Based on their choice, read the entire file (users, todos, posts or photos)
+Show a nicely formatted printout of some parts of the data
+  E.g. 'users' might show names and email only, 'todos' might show title and status only
+
+When you ask the user for an ID, make sure it is within the number of items for that category: 
+  10 users, 200 todos, 100 posts and 5000 photos
+Then access the chosen ID from the collection and write just those details out to a file
+(decide how to name you file, maybe based on user name or todo title etc.)
+
+If time
+=======
+Filter the returned todos data to only show completed items
+Find a way to show just the photos belonging to a specific userId
+
+Optional
+========
+Create a 'Todo' class 
+When the todos data is retrieved, populate an instance of the class from just one of the todos
+you should use name-mangling and getter/setter methods with validation for the properties 
+('userId', 'Id', 'title' and 'completed')
+Add a __str__ method to the Todo class, so it prints nicely
+Consider building a photos class, or a users class
+
+
