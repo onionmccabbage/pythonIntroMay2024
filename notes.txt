@@ -46,7 +46,7 @@ Object-Oriented Programming
     > Understand how to define and use classes and objects in Python.
 
 Creating Functions, Modules, and Packages
-    functions and classes are written inside modules (files) which are placed in packages (folders)
+    > functions and classes are written inside modules (files) which are placed in packages (folders)
     > Explore the creation and utilization of functions for modular code.
     > Understand the concept of modules and packages for organizing and structuring code.
 
@@ -55,11 +55,11 @@ Introduction to Functional Programming
     Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
     Another review exercise
 
-q  -Is there anything special about  __next__ or is that something you gave?
+> Is there anything special about  __next__ or is that something you gave?
 
 > read write files
 
- Future - Jupyter
+Future - Jupyter
 
 
 

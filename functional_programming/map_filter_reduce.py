@@ -25,5 +25,7 @@ def main():
     # print(my_odds.__next__()) # -5
     # print(my_odds.__next__()) # 5
 
+# everything with leading and trailing double-underscore is part of Python
+# known as 'dunder'
 if __name__ == '__main__':
     main()
