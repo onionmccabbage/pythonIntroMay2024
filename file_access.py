@@ -19,6 +19,15 @@ def writeToFile(s):
     except Exception as err:
         print(f'There was a problem: {err}')
 
+def elegantWriter(s):
+    '''use 'with' to write text to a file'''
+    try:
+        with open('my_log.txt', 'at') as fout:
+            fout.write(s) # when we use 'with' the file access object will be closed when no longer needed
+    except Exception as err:
+        print(f'Problem: {err}')
+
 if __name__ == '__main__':
     # printToFile('this text will be commited to a file')
     writeToFile('this text \nwill be written \nto a file') # \n is a new line
+    elegantWriter('This also gets logged\n')
