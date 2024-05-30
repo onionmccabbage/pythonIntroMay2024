@@ -13,6 +13,7 @@ Details:
 Ask to use if they want to see 'users', 'todos', 'posts' or 'photos' datatypes
 (You could use a while loop and get them to enter a valid category)
 Based on their choice, read the entire file (users, todos, posts or photos)
+You then convert the loaded JSON text to a Python structure json.loads()
 Show a nicely formatted printout of some parts of the data
   E.g. 'users' might show names and email only, 'todos' might show title and status only
 
@@ -24,7 +25,7 @@ Then access the chosen ID from the collection and write just those details out t
 If time
 =======
 Filter the returned todos data to only show completed items
-Find a way to show just the photos belonging to a specific userId
+Find a way to show just the photos belonging to a specific albumId (filter on albumId)
 
 Optional
 ========
