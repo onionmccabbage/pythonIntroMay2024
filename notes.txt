@@ -59,7 +59,8 @@ Introduction to Functional Programming
 
 > read write files
 
-Future - Jupyter
+Future > Jupyter, database, API loading over http, threading, microservices
+architecture and best practice, design patterns. Also testing
 
 Skillnet NI forms
 - make sure these are completed
