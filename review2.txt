@@ -1,4 +1,4 @@
-Review 2
+Review 2 until at least 3:00
 ========
 In this exercise you will ask the user to specify a valid category, 
 then retrieve the relevant file for that category
