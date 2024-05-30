@@ -26,7 +26,7 @@ def showData(d):
 def showTodos(todos):
     '''Show the todos nicely formatted'''
     for todo in todos:
-        print(f'{todo['id']}: {todo['title']} completed:{todo['completed']}')
+        print(f"{todo['id']}: {todo['title']} completed:{todo['completed']}")
 
 def showUsers(users):
     '''show users nicely formatted'''

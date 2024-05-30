@@ -53,7 +53,7 @@ Creating Functions, Modules, and Packages
 Introduction to Functional Programming
     > Familiarize yourself with functional programming concepts in Python.
     Learn how to use lambdas, higher-order functions, and map/reduce/filter for concise and expressive code.
-    Another review exercise
+    > Another review exercise
 
 > Is there anything special about  __next__ or is that something you gave?
 
