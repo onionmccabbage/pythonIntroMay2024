@@ -34,7 +34,7 @@ Python code essentials
     > after lunch: review exercise
 
 Python datatypes and variables
-    Master the application of branching constructs for decision-making in code
+    > Master the application of branching constructs for decision-making in code
     > Main Collection Types: List, Tuple, Set, Dict
 
 Python's primary collection types

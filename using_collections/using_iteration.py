@@ -1,30 +1,31 @@
 # here we will build tuple, list and dict object then iterate over members
 
-l = []
-k = list(('Ethel', 'Deidre', 'Enit', 'Fran')) # we put a tuple into our list
-for i in k:
-    print(i)
+if __name__ == '__main__':
+    l = []
+    k = list(('Ethel', 'Deidre', 'Enit', 'Fran')) # we put a tuple into our list
+    for i in k:
+        print(i)
 
-m = (4,) # a one-member tuple - careful dont just write (4)
-n = (4, 6, 20) # here we have a tuple
-for i in n:
-    print(i)
-t = tuple() # an empty tuple - very pointless!!
+    m = (4,) # a one-member tuple - careful dont just write (4)
+    n = (4, 6, 20) # here we have a tuple
+    for i in n:
+        print(i)
+    t = tuple() # an empty tuple - very pointless!!
 
-d = dict() # explicit dict
-e = {'n':k[0], 'age':n[2], 'recent':True, 'gender':'cis'}
-# we can iterate over a dict
-for (k,v) in e.items(): # by convention (k,v) for key,value. Careful items() is a method
-    print(f'key {k} has value {v}')
-for k in e.keys():
-    print(k, e[k])
-for v in e.values():
-    print(v)
+    d = dict() # explicit dict
+    e = {'n':k[0], 'age':n[2], 'recent':True, 'gender':'cis'}
+    # we can iterate over a dict
+    for (k,v) in e.items(): # by convention (k,v) for key,value. Careful items() is a method
+        print(f'key {k} has value {v}')
+    for k in e.keys():
+        print(k, e[k])
+    for v in e.values():
+        print(v)
 
-# we can work strings
-s = 'strings are collections of UTF characters'
-print(len(s))
-for i in s:
-    print(i, end=', ') # by default print always ends with a new line but we can specify our own termination character
+    # we can work strings
+    s = 'strings are collections of UTF characters'
+    print(len(s))
+    for i in s:
+        print(i, end=', ') # by default print always ends with a new line but we can specify our own termination character
 
-s = set()
+    s = set()
