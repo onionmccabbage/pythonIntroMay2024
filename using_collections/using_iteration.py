@@ -14,7 +14,7 @@ t = tuple() # an empty tuple - very pointless!!
 d = dict() # explicit dict
 e = {'n':k[0], 'age':n[2], 'recent':True, 'gender':'cis'}
 # we can iterate over a dict
-for (k,v) in e.items: # by convention (k,v) for key,value
+for (k,v) in e.items(): # by convention (k,v) for key,value. Careful items() is a method
     print(f'key {k} has value {v}')
 
 s = set()
