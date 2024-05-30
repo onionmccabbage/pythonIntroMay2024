@@ -41,3 +41,6 @@ to a fileThis also gets logged
 this text 
 will be written 
 to a fileThis also gets logged
+this text 
+will be written 
+to a file

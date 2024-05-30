@@ -24,6 +24,9 @@ def elegantWriter(s):
     try:
         with open('my_log.txt', 'at') as fout:
             fout.write(s) # when we use 'with' the file access object will be closed when no longer needed
+    # NB always catch specific exceptions early then generic exceptions last
+    except FileExistsError as fe:
+        print(f'Problem: the file already exists')
     except Exception as err:
         print(f'Problem: {err}')
 
