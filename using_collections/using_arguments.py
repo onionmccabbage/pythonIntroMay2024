@@ -22,6 +22,11 @@ def fnB(**kwargs): # **kwargs will gather all keyword arguments into a dict
         r = r+f'Key {k} contains {v}\n'
     return r
 
+# all positional argumetns MUST come before any keyword arguments
+def fnC(*args, **kwargs):
+    '''any arguments will be in a tuple, any kwargs will be in a dict'''
+    return (args, kwargs)
+
 
 if __name__ == '__main__':
     print( fnA(2.345) ) # one argument
@@ -29,3 +34,4 @@ if __name__ == '__main__':
     print( fnA(7,8,9) ) # three arguments
     fnA(4,3,2, True, fnA, 'clever', {}, [], ('A',)) # arbitrary values passed as positional arguments 
     print( fnB(x=3, n='Floela', e='nonsuch@dooby.ie', fn=fnB, l=[5,4,3,2,1]) )
+    print( fnC(4,3,2, True, fnA, 'clever', {}, [], ('A',), x=3, n='Floela', e='nonsuch@dooby.ie', fn=fnB, l=[5,4,3,2,1]) )
